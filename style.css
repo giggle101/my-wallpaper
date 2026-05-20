@@ -58,28 +58,25 @@ body {
    4. LAYER-SPECIFIC CREATIVE STYLES (Modify these to change the look!)
    ========================================================================== */
 
-/* BACKGROUND LAYER (Deep Sky, Stars, Gradients) */
 .layer-bg {
-  /* Using a high-quality placeholder image. Replace with your own asset later! */
-  background-image: url('https://picsum.photos/id/1015/1920/1080');
+  background-image: url('layer0008.png');
   z-index: 1;
 }
 
-/* MIDGROUND LAYER (Characters, Silhouettes, Floating Elements) */
-.layer-md {
+.layer-01 {
   background-image: url('https://picsum.photos/id/1016/1920/1080');
   opacity: 0.85;
   z-index: 2;
-  
-  /* Optional look: add a soft blur to midground elements to enhance depth */
-  /* filter: blur(2px); */
 }
 
-/* FOREGROUND LAYER (Text overlay, UI, overlays) */
-.layer-fg {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.layer-02 {
+  background-image: url('https://picsum.photos/id/1016/1920/1080');
+  opacity: 0.85;
   z-index: 3;
-  pointer-events: none; /* Allows mouse tracking to ignore text boundaries */
+}
+
+.layer-03 {
+  background-image: url('https://picsum.photos/id/1016/1920/1080');
+  opacity: 0.85;
+  z-index: 4;
 }
