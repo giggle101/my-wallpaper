@@ -1,18 +1,32 @@
 <!DOCTYPE html>
-<html lang-"en">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>hello this is my nulla</title>
+  <title>Lively Parallax Wallpaper</title>
+  
+  <!-- Linking your CSS stylesheet -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+  <!-- The main stage that fills your whole desktop screen -->
   <div class="parallax-container">
+    
+    <!-- LAYER 1: Deep Background (Moves the slowest / smallest data-depth) -->
     <div class="parallax-layer layer-bg" data-depth="0.1"></div>
-    <div class="parallax-layer layer-mg" data-depth="0.3"></div>
-    <div class="parallax-layer layer-fg" data-depth="0.6"></div>
+    
+    <!-- LAYER 2: Midground (Great for characters, silhouettes, or mountains) -->
+    <div class="parallax-layer layer-md" data-depth="0.3"></div>
+    
+    <!-- LAYER 3: Foreground Text or Elements (Moves the fastest / highest data-depth) -->
+    <div class="parallax-layer layer-fg" data-depth="0.6">
+      <h1 class="wallpaper-title">NEON RHYTHM</h1>
+    </div>
+    
   </div>
+
+  <!-- Linking your JavaScript logic at the very bottom -->
   <script src="script.js" defer></script>
 </body>
 </html>
