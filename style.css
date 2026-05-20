@@ -29,6 +29,7 @@ body {
   justify-content: center;
   align-items: center;
   perspective: 1000px;     /* Prepares stage for subtle 3D depth adjustments */
+  transform: scale(0.5);
 }
 
 /* ==========================================================================
@@ -67,21 +68,18 @@ body {
   background-image: url('layer0007.png');
   opacity: 1;
   z-index: 2;
-   transform: scale(0.8);
 }
 
 .layer-02 {
   background-image: url('layer0006.png');
   opacity: 1;
   z-index: 3;
-   transform: scale(0.8);
 }
 
 .layer-03 {
   background-image: url('layer0005.png');
   opacity: 1;
   z-index: 4;
-   transform: scale(0.8);
 }
 
 .layer-04 {
@@ -89,7 +87,6 @@ body {
   opacity: 1;
   z-index: 5;
   mix-blend-mode: screen;
-   transform: scale(0.8);
 }
 
 .layer-05 {
@@ -97,19 +94,16 @@ body {
   opacity: 1;
   z-index: 6;
   mix-blend-mode: overlay;
-   transform: scale(0.8);
 }
 
 .layer-06 {
   background-image: url('layer0002.png');
   opacity: 1;
   z-index: 7;
-   transform: scale(0.8);
 }
 
 .layer-07 {
   background-image: url('layer0001.png');
   opacity: 1;
   z-index: 8;
-   transform: scale(0.8);
 }
