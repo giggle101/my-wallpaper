@@ -64,19 +64,43 @@ body {
 }
 
 .layer-01 {
-  background-image: url('https://picsum.photos/id/1016/1920/1080');
-  opacity: 0.85;
+  background-image: url('layer0007.png');
+  opacity: 1;
   z-index: 2;
 }
 
 .layer-02 {
-  background-image: url('https://picsum.photos/id/1016/1920/1080');
-  opacity: 0.85;
+  background-image: url('layer0006.png');
+  opacity: 1;
   z-index: 3;
 }
 
 .layer-03 {
-  background-image: url('https://picsum.photos/id/1016/1920/1080');
-  opacity: 0.85;
+  background-image: url('layer0005.png');
+  opacity: 1;
   z-index: 4;
+}
+
+.layer-04 {
+  background-image: url('layer0004.png');
+  opacity: 1;
+  z-index: 5;
+}
+
+.layer-05 {
+  background-image: url('layer0003.png');
+  opacity: 1;
+  z-index: 6;
+}
+
+.layer-06 {
+  background-image: url('layer0002.png');
+  opacity: 1;
+  z-index: 7;
+}
+
+.layer-07 {
+  background-image: url('layer0001.png');
+  opacity: 1;
+  z-index: 8;
 }
