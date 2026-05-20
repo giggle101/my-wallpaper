@@ -1,0 +1,85 @@
+/* ==========================================================================
+   1. GLOBAL RESET & RESET DEFAULTS
+   ========================================================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #080810; /* Deep dark background default */
+  overflow: hidden;         /* CRITICAL: Hides desktop scrollbars during movement */
+  width: 100vw;
+  height: 100vh;
+  
+  /* Desktop Wallpaper Optimizations */
+  user-select: none;        /* Prevents accidentally highlighting text on desktop */
+  cursor: default;          /* Keeps the standard cursor arrow */
+}
+
+/* ==========================================================================
+   2. THE STAGE (CONTAINER)
+   ========================================================================== */
+.parallax-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1000px;     /* Prepares stage for subtle 3D depth adjustments */
+}
+
+/* ==========================================================================
+   3. THE PARALLAX LAYERS (BASE RULES)
+   ========================================================================== */
+.parallax-layer {
+  position: absolute;
+  
+  /* CRITICAL: Make layers 10% larger than the viewport and offset by -5%.
+     This creates a bleed area so background edges don't show when shifting. */
+  width: 110%;
+  height: 110%;
+  top: -5%;
+  left: -5%;
+  
+  /* Background Image Configurations */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  /* Smooth Gliding Effect: Prevents the layers from feeling jittery or rigid. */
+  transition: transform 0.25s cubic-bezier(0.25, 1, 0.5, 1);
+  will-change: transform; /* Optimizes GPU performance for smoother frame rates */
+}
+
+/* ==========================================================================
+   4. LAYER-SPECIFIC CREATIVE STYLES (Modify these to change the look!)
+   ========================================================================== */
+
+/* BACKGROUND LAYER (Deep Sky, Stars, Gradients) */
+.layer-bg {
+  /* Using a high-quality placeholder image. Replace with your own asset later! */
+  background-image: url('https://picsum.photos/id/1015/1920/1080');
+  z-index: 1;
+}
+
+/* MIDGROUND LAYER (Characters, Silhouettes, Floating Elements) */
+.layer-md {
+  background-image: url('https://picsum.photos/id/1016/1920/1080');
+  opacity: 0.85;
+  z-index: 2;
+  
+  /* Optional look: add a soft blur to midground elements to enhance depth */
+  /* filter: blur(2px); */
+}
+
+/* FOREGROUND LAYER (Text overlay, UI, overlays) */
+.layer-fg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+  pointer-events: none; /* Allows mouse tracking to ignore text boundaries */
+}
