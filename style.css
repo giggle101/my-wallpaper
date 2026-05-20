@@ -29,7 +29,6 @@ body {
   justify-content: center;
   align-items: center;
   perspective: 1000px;     /* Prepares stage for subtle 3D depth adjustments */
-  transform: scale(0.8);
 }
 
 /* ==========================================================================
@@ -62,40 +61,26 @@ body {
 .layer-bg {
   background-image: url('layer0008.png');
   z-index: 1;
-  transform: scale(1.5);
-     /* THE FIX: Override the default 100% and double the size */
-  width: 200%;
-  height: 200vh;
-  
-  /* Re-center the oversized layer so it expands outward from the middle */
-  top: -50%;
-  left: -50%;
 }
 
 .layer-01 {
   background-image: url('layer0007.png');
   opacity: 1;
   z-index: 2;
-  transform: scale(1.5);
-     /* THE FIX: Override the default 100% and double the size */
-  width: 200%;
-  height: 200vh;
-  
-  /* Re-center the oversized layer so it expands outward from the middle */
-  top: -50%;
-  left: -50%;
 }
 
 .layer-02 {
   background-image: url('layer0006.png');
   opacity: 1;
   z-index: 3;
+     transform: scale(0.8);
 }
 
 .layer-03 {
   background-image: url('layer0005.png');
   opacity: 1;
-  z-index: 4;
+  z-index: 4
+     transform: scale(0.8);
 }
 
 .layer-04 {
@@ -103,6 +88,7 @@ body {
   opacity: 1;
   z-index: 5;
   mix-blend-mode: screen;
+     transform: scale(0.8);
 }
 
 .layer-05 {
@@ -110,16 +96,19 @@ body {
   opacity: 1;
   z-index: 6;
   mix-blend-mode: overlay;
+     transform: scale(0.8);
 }
 
 .layer-06 {
   background-image: url('layer0002.png');
   opacity: 1;
   z-index: 7;
+     transform: scale(0.8);
 }
 
 .layer-07 {
   background-image: url('layer0001.png');
   opacity: 1;
   z-index: 8;
+     transform: scale(0.8);
 }
