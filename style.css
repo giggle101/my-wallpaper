@@ -46,7 +46,7 @@ body {
   left: -5%;
   
   /* Background Image Configurations */
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   
@@ -62,13 +62,28 @@ body {
 .layer-bg {
   background-image: url('layer0008.png');
   z-index: 1;
-  transform: scale(2);
+  transform: scale(1.5);
+     /* THE FIX: Override the default 100% and double the size */
+  width: 200%;
+  height: 200vh;
+  
+  /* Re-center the oversized layer so it expands outward from the middle */
+  top: -50%;
+  left: -50%;
 }
 
 .layer-01 {
   background-image: url('layer0007.png');
   opacity: 1;
   z-index: 2;
+  transform: scale(1.5);
+     /* THE FIX: Override the default 100% and double the size */
+  width: 200%;
+  height: 200vh;
+  
+  /* Re-center the oversized layer so it expands outward from the middle */
+  top: -50%;
+  left: -50%;
 }
 
 .layer-02 {
